@@ -1,0 +1,84 @@
+.Text-Header {
+    font-size: 32px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 15px;
+}
+
+.Text-Body {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+}
+
+.Text {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    z-index: 2;
+    background-color: #FFFFFF03;
+    width: 10%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 45.9px 0px #00000040;
+    border-radius: 25px;
+    padding: 15px 25px;
+    margin: 30px;
+    transition: all 0.5s;
+    will-change: box-shadow;
+}
+
+.Text:hover {
+    background-color: white;
+    transform: scale(1.1)
+}
+
+.Text-active {
+    animation: pulse 1.5s;
+    box-shadow: 0px 0px 45.9px 0px #FF2F54;
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 0px 0px 45.9px 0px #00000055;
+    }
+
+    30% {
+        box-shadow: 0px 0px 70px 30px #9d162f;
+    }
+
+    to {
+        box-shadow: 0px 0px 45.9px 0px #FF2F54;
+    }
+}
+
+@media (max-width:1921px) {
+    .Text {
+        width: 15%;
+    }
+}
+
+@media (max-width:1441px) {
+    .Text {
+        width: 20%;
+    }
+}
+
+@media (max-width:1025px) {
+    .Text {
+        width: 30%;
+    }
+}
+@media (max-width:769px) {
+    .Text {
+        width: 50%;
+    }
+}
+
+@media (max-width:426px) {
+    .Text {
+        width: 70%;
+    }
+}

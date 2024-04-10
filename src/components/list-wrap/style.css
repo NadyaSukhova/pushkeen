@@ -1,0 +1,23 @@
+.ListWrap{
+    background-color: #D4D4D4;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ListWrap-background {
+    display:block;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #7075F1;
+    width: 48.7%;
+    height: 27.8%;
+    border-radius: 300px;
+    transform: rotate(30deg);
+    margin: 32.03vh auto;
+}
